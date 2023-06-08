@@ -3,6 +3,25 @@ import { Board } from "./Board";
 import { Moves } from "./Moves";
 import { useState } from "react";
 
+import { styled } from "@linaria/react";
+
+const NewGameBtn = styled.button`
+  margin-bottom: 20px;
+`;
+
+const GameInfo = styled.div`
+  margin-bottom: 20px;
+`;
+
+const GameBox = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const NewGame = ({ onClick }) => (
+  <NewGameBtn onClick={onClick}>New Game</NewGameBtn>
+);
+
 export function Game() {
   const initialHistory = [new Array(9).fill(null)];
 
@@ -33,17 +52,15 @@ export function Game() {
 
   return (
     <div className="game-with-menu">
-      <button className="game-menu" onClick={handleNewGame}>
-        New Game
-      </button>
-      <div className="game">
+      <NewGame onClick={handleNewGame} />
+      <GameBox>
         <div className="game-board">
           <Board squares={squares} xIsNext={xIsNext} onPlay={onPlay} />
         </div>
-        <div className="game-info">
+        <GameInfo>
           <Moves history={history} jumpToMove={jumpToMove} />
-        </div>
-      </div>
+        </GameInfo>
+      </GameBox>
     </div>
   );
 }
