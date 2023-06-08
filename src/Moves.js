@@ -1,3 +1,4 @@
+import React from "react";
 export function Moves({ history, jumpToMove }) {
   const moves = history.map((_, index) => (
     <li key={index}>

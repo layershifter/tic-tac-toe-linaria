@@ -1,3 +1,4 @@
+import React from "react";
 import { Board } from "./Board";
 import { Moves } from "./Moves";
 import { useState } from "react";

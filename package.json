@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@linaria/babel-preset": "^4.4.5",
+    "@linaria/core": "^4.2.10",
+    "@linaria/react": "^4.3.8",
+    "@linaria/shaker": "^4.2.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint --fix ./"
   },
@@ -34,12 +38,15 @@
     ]
   },
   "devDependencies": {
+    "@linaria/webpack-loader": "^4.1.17",
     "@testing-library/dom": "^9.3.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "customize-cra": "^1.0.0",
     "eslint": "^8.42.0",
     "eslint-config-react-app": "^7.0.1",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "react-app-rewired": "^2.2.1"
   }
 }
