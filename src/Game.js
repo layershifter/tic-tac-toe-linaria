@@ -31,7 +31,7 @@ export function Game() {
   }
 
   return (
-    <div class="game-with-menu">
+    <div className="game-with-menu">
       <button className="game-menu" onClick={handleNewGame}>
         New Game
       </button>
