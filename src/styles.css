@@ -1,3 +1,4 @@
+/*
 * {
   box-sizing: border-box;
 }
@@ -55,7 +56,9 @@ body {
   margin: 20px;
   padding: 0;
 }
+*/
 
+/*
 .square {
   background: #fff;
   border: 1px solid #999;
@@ -80,25 +83,35 @@ body {
 .status {
   margin-bottom: 10px;
 }
+*/
 
+/*
 .game {
   display: flex;
   flex-direction: row;
 }
+*/
 
+/*
 .game-info {
   margin-left: 20px;
 }
+*/
 
+/*
 .game-info li {
   margin-top: 10px;
 }
+*/
 
+/*
 .game-menu {
   margin-bottom: 20px;
 }
+*/
 
+/*
 .game-info li button {
   min-width: 120px;
 }
-
+*/
