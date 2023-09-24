@@ -18,7 +18,6 @@ export const globals = css`
     .body {
       box-sizing: border-box;
     }
-  }
 `;
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,6 +1,6 @@
 {
   "presets": [
-    ["react-app", {"flow": false, "typescript": false }],
-    "@linaria"
+    "@babel/preset-env",
+    "@babel/preset-react"
   ]
 }
